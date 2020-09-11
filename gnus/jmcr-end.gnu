@@ -12,11 +12,11 @@ set xtics border in scale 0,0 nomirror rotate by -45  autojustify
 set xtics  norangelimit 
 set xtics   ()
 #set title "Comparing SATTune against SMT Solvers Hexiom\n" 
-set yrange [ 0.01 : 100000. ] noreverse nowriteback
+set yrange [ 0.00001 : 100000. ] noreverse nowriteback
 DEBUG_TERM_HTIC = 119
 DEBUG_TERM_VTIC = 119
 set logscale y
 set ylabel "Time - log(seconds)"
 scale = 1
 ## Last datafile plotted: "immigration.dat"
-plot 'data/jmcr-end.txt' using ($2*scale):xtic(1) ti col, '' u ($3*scale) ti col, '' u ($4*scale) ti col, '' u ($5*scale) ti col,
+plot 'data/jmcr-end.txt' using ($2*scale):xtic(1) ti col, '' u ($3*scale) ti col, '' u ($4*scale) ti col

@@ -12,7 +12,7 @@ set xtics border in scale 0,0 nomirror rotate by -45  autojustify
 set xtics  norangelimit 
 set xtics   ()
 #set title "Comparing SATTune against SMT Solvers Hexiom\n" 
-set yrange [ 0.0001 : 100000. ] noreverse nowriteback
+set yrange [ 0.01 : 100000. ] noreverse nowriteback
 DEBUG_TERM_HTIC = 119
 DEBUG_TERM_VTIC = 119
 set logscale y

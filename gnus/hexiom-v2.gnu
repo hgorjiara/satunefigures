@@ -1,11 +1,11 @@
 # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
 # set output 'histograms.2.png'
-set term pdfcairo
+set term pdfcairo size 9,3
 set output "pdfs/hexiom-v2.pdf"
 set boxwidth 0.9 absolute
-set style fill   solid 1.00 border lt -1
-set key fixed right top horizontal Right noreverse noenhanced autotitle nobox
-set style histogram clustered gap 1 title textcolor lt -1
+set style fill solid 1.00 border lt -1
+set key fixed right top horizontal Right noreverse noenhanced autotitle nobox font ",12"
+set style histogram clustered gap 2 title textcolor lt -1 
 set datafile missing '-'
 set style data histograms
 set xtics border in scale 0,0 nomirror rotate by -45  autojustify
